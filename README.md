@@ -1,8 +1,11 @@
-## Post Manager | View, Search & Bookmark Post
-A NextJS 13 based web app for viewing, searching, and bookmarking posts.
+## NY Times Most Popular Articles App - REACT
+This project is a simple web application built with React that retrieves and displays a list of the most popular articles from the New York Times Most Popular Articles API. It allows users to view details of each article by clicking on the respective item in the list, following the typical master/detail pattern.
 
 ## How to Install
-First, install node modules. On the root folder open terminal and write:
+Open cmd and clone the project using this command:
+```bash https://github.com/mufaddalali/NY-Times-App.git```
+
+Then go to folder NY-Times-App, open terminal and write:
 
 ```bash
 npm install
@@ -14,39 +17,38 @@ After succesfully installing dependencies. Run
 ```bash
 npm run dev
 ```
-This will open the project on [http://localhost:3000](http://localhost:3000)
+This will open the project on [http://localhost:5173](http://localhost:5173)
 
-## Brief Explanation
-#### App Level
- - At the top level, you have the main app folder. Inside it you will find page.js which is the main entry point of the app.
+## Change the API Key
+- Go to [https://developers.nytimes.com/get-started/](https://developer.nytimes.com/get-started) and make your account. You will get an API key
+- Then go to api.js file in the project and insert your API key in the variable provided below
+
+```
+const apiKey = 'YOUR_API_HERE';
+```
+
+Once you have inserted your API you will see the results.
 
 #### Folder Structure
-There are 4 sub folders in the project.
+There are 2 sub folders in the project.
 
 ```1. Api```
-```2. Bookmark```
-```3. Components```
-```4. Post```
+```2. Components```
 
 
-- The api folder contains usePosts.js file which is responsible for interacting with external APIs and  fetching data. It encapsulates logic related to data retrieval and provides a clean separation of concerns within the project.
+- The api folder contains api.js file which is responsible for interacting with external API and fetching data. It encapsulates logic related to data retrieval and provides a clean separation of concerns within the project.
+  
+- Components folder has 2 sepearte files. ```Article.jsx ``` and ```ArticleDetails.jsx```. These two components are made to display all articles and single articles seperately and to ensure uniformity and improved rendering efficiency.
 
-- Bookmark folder displays bookmarked posts within the app. It serves as a dedicated section for users to view their bookmarked content
-
-- Components folder has 2 sepearte files. ```Header.js ``` and ```Footer.js```. These two components are utilized on multiple pages to ensure uniformity and improved rendering efficiency.
-
- - The Post folder contains a dynamic routing page that displays a single post when clicked on Read More button
+ - The ArticleDetails page is a dynamic routing page that displays a single post when clicked on View Article button
 
 ## Features
 
-- Pagination functionality
-- Search post by title
-- Bookmark post
-- View individual post
+- Fetches data from the NY Times Most Popular Articles API.
+- Search article by title
+- Displays a list of articles with titles and summaries.
+- Allows users to view detailed information of each article.
 - Mobile responsive
 
-
-
- ### Summary
- The Post Manager application is designed to enable users to view, search, and manage posts efficiently. Utilizing Next.js for seamless rendering, the app offers dynamic routing to view individual posts and bookmark functionality to personalize saved posts. With a structured hierarchy, components ensure reusability and maintainability, while the API folder simplifies fetching posts from an external source. 
-
+## Thank You
+- Appreciate your feedbacks :)
