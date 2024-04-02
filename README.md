@@ -3,7 +3,7 @@ This project is a simple web application built with React that retrieves and dis
 
 ## How to Install
 Open cmd and clone the project using this command:
-```bash https://github.com/mufaddalali/NY-Times-App.git```
+```https://github.com/mufaddalali/NY-Times-App.git```
 
 Then go to folder NY-Times-App, open terminal and write:
 
@@ -14,7 +14,7 @@ This command will install all the dependencies of the project
 
 ## Run the project
 After succesfully installing dependencies. Run
-```bash
+```
 npm run dev
 ```
 This will open the project on [http://localhost:5173](http://localhost:5173)
