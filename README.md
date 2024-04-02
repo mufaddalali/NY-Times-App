@@ -7,7 +7,7 @@ Open cmd and clone the project using this command:
 
 Then go to folder NY-Times-App, open terminal and write:
 
-```bash
+```
 npm install
 ```
 This command will install all the dependencies of the project
